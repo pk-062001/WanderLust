@@ -1,0 +1,64 @@
+<!-- welcome home page in ejs    -->
+
+
+
+
+
+<% layout("/layouts/boilerplate") %>
+
+    <body>
+        <!-- Hero Section -->
+        <header class="bg-dark text-white py-5 animate-fade-in">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold animate-slide-up">Find Your Perfect Stay</h1>
+                <p class="lead animate-slide-up delay-1">Explore amazing listings across the country with just a click.
+                </p>
+                <div class="mt-4 animate-slide-up delay-2">
+                    <a href="/listings" class="btn btn-primary btn-lg me-2 hover-pop">
+                        <i class="fas fa-search"></i> View Listings
+                    </a>
+                    <a href="/listings/new" class="btn btn-outline-light btn-lg hover-pop">
+                        <i class="fas fa-plus"></i> Add New Listing
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Features Section -->
+        <section class="py-5 bg-white animate-fade-in">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4 animate-slide-up">
+                        <div class="p-4 shadow-sm rounded hover-glow bg-light">
+                            <i class="fas fa-home fa-3x text-primary mb-3"></i>
+                            <h5>Verified Homes</h5>
+                            <p>Every listing is thoroughly vetted for quality and safety.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 animate-slide-up delay-1">
+                        <div class="p-4 shadow-sm rounded hover-glow bg-light">
+                            <i class="fas fa-map-marked-alt fa-3x text-success mb-3"></i>
+                            <h5>Prime Locations</h5>
+                            <p>Choose from top-rated neighborhoods and vacation spots.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 animate-slide-up delay-2">
+                        <div class="p-4 shadow-sm rounded hover-glow bg-light">
+                            <i class="fas fa-hand-holding-usd fa-3x text-warning mb-3"></i>
+                            <h5>Affordable Prices</h5>
+                            <p>Get the best deals without compromising comfort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-light py-5 text-center animate-fade-in delay-1">
+            <div class="container">
+                <h2 class="mb-3 animate-slide-up">Ready to explore your next stay?</h2>
+                <a href="/listings" class="btn btn-success btn-lg hover-pop animate-slide-up delay-2">Browse Listings
+                    Now</a>
+            </div>
+        </section>
+    </body>
